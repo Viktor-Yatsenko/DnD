@@ -6,16 +6,13 @@
 
 
 void menu();
-void heroChoice();
+void levelOne();
 
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	Hero x;
-
-	std::cout << x.m_test << std::endl;
 	
-
+	
 	menu();
 }
 
@@ -36,85 +33,14 @@ void menu() {
 		int choice;
 		std::cin >> choice;
 		if (choice == 1)
-			heroChoice();
+			levelOne();
 		if (choice == 2)
 			exit(1);
 }
 
-void heroChoice() {
 
-
-	while (true) {
-		std::cout << "Выберите класс героя\n1-Рыцарь\n2-Наемник\n3-Воин\n4-Геральд\n5-Вор\n6-Ассасин\n7-Волшебник\n8-Пиромант\n9-Клирик\n10-Нищий"<< std::endl;
-
-		int enterHero;
-		std::cin >> enterHero;
-		/*
-		switch (enterHero) {
-		// рыцарь
-		case 1:
-
-			enum class CharacteristicsOne
-			{
-				int level = 7;
-				int vigor = 12;
-				int attunement = 10;
-				int endurance = 11;
-				int vitality = 15;
-				int strength = 13;
-				int dexterity = 12;
-				int inteligence = 9;
-				int faith = 9;
-				int luck = 7;
-			};
-			CharacteristicsOne characteristicsOne = CharacteristicsOne::vigor;
-			std::cout << characteristicsOne 
-
-			//
-			struct characteristicsOne
-			{
-				int level = 7;
-				int vigor = 12;
-				int attunement = 10;
-				int endurance = 11;
-				int vitality = 15;
-				int strength = 13;
-				int dexterity = 12;
-				int inteligence = 9;
-				int faith = 9;
-				int luck = 7;
-			};
-
-			*/
-
-
-
-
-
-			break;
-		}
-
-		/*
-		if (enterHero == 1) {
-
-			struct Warrior
-			{
-			int force = 15;
-				int 
-			};
-			Warrior warrior;
-
-			std::cout << warrior << std::endl;
-		
-		
-		break;
-		}
-			*/
 	
+void levelOne() {
+
+	std::cout << "-Чёрт, опять новый день. Гамаз встал с кровати обиженый что вчера мама не дала ему потанцевать. -Уж сегодня я точно смогу потанцевать и меня НИКТО не остановит! Надо всеголиш пробраться в комнату Тамары чтобы взять ключ от шкафа где лежит колонка и тогда будет настоящая вечеринка!!!!" << std::endl;
 }
-
-
-
-
-	
-
