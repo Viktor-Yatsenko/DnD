@@ -11,13 +11,15 @@ public:
 	Hero() {   //Конструктор по умолчанию
 
 		Name = "Stranger";
+		Health = 0;
 		dexterity = 0;
 		Intelligence = 0;
 		charisma = 0;
 	}
-	Hero(std::string name,int value1, int value2,int value3): // Заполнение характеристик 
-		Name(name),dexterity(value1),
-		Intelligence(value2),charisma(value3) {}
-	
+	Hero(std::string name,int value1, int value2,int value3,int value4)
+		:Name(name), Health(value1),dexterity(value2),
+		Intelligence(value3),charisma(value4) {}
+	 
+
 
 };

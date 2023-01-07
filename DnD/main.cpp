@@ -11,8 +11,11 @@ void levelOne();
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
+	Hero x;
+
+	std::cout << x.m_test << std::endl;
 	
-	
+
 	menu();
 }
 
@@ -38,6 +41,7 @@ void menu() {
 			exit(1);
 }
 
+void heroChoice() {
 
 	
 void levelOne() {
@@ -86,8 +90,8 @@ void levelOne() {
 
 
 
-			break;
-		}
+			//break;
+		//}
 
 		/*
 		if (enterHero == 1) {
