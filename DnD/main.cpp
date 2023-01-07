@@ -42,5 +42,74 @@ void menu() {
 	
 void levelOne() {
 
-	std::cout << "-Чёрт, опять новый день. Гамаз встал с кровати обиженый что вчера мама не дала ему потанцевать. -Уж сегодня я точно смогу потанцевать и меня НИКТО не остановит! Надо всеголиш пробраться в комнату Тамары чтобы взять ключ от шкафа где лежит колонка и тогда будет настоящая вечеринка!!!!" << std::endl;
+		int enterHero;
+		std::cin >> enterHero;
+		/*
+		switch (enterHero) {
+		// рыцарь
+		case 1:
+
+			enum class CharacteristicsOne
+			{
+				int level = 7;
+				int vigor = 12;
+				int attunement = 10;
+				int endurance = 11;
+				int vitality = 15;
+				int strength = 13;
+				int dexterity = 12;
+				int inteligence = 9;
+				int faith = 9;
+				int luck = 7;
+			};
+			CharacteristicsOne characteristicsOne = CharacteristicsOne::vigor;
+			std::cout << characteristicsOne 
+
+			//
+			struct characteristicsOne
+			{
+				int level = 7;
+				int vigor = 12;
+				int attunement = 10;
+				int endurance = 11;
+				int vitality = 15;
+				int strength = 13;
+				int dexterity = 12;
+				int inteligence = 9;
+				int faith = 9;
+				int luck = 7;
+			};
+
+			*/
+
+
+
+
+
+			break;
+		}
+
+		/*
+		if (enterHero == 1) {
+
+			struct Warrior
+			{
+			int force = 15;
+				int 
+			};
+			Warrior warrior;
+
+			std::cout << warrior << std::endl;
+		
+		
+		break;
+		}
+			*/
+	
 }
+
+
+
+
+	
+
