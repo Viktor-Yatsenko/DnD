@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <stdlib.h>
 #include <string>
+#include "Hero.h"
 
 
 void menu();
@@ -10,7 +11,10 @@ void heroChoice();
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	system("chcp 1251");
+	Hero x;
+
+	std::cout << x.m_test << std::endl;
+	
 
 	menu();
 }
@@ -45,7 +49,7 @@ void heroChoice() {
 
 		int enterHero;
 		std::cin >> enterHero;
-
+		/*
 		switch (enterHero) {
 		// נûצאנü
 		case 1:
@@ -66,7 +70,7 @@ void heroChoice() {
 			CharacteristicsOne characteristicsOne = CharacteristicsOne::vigor;
 			std::cout << characteristicsOne 
 
-			/*
+			//
 			struct characteristicsOne
 			{
 				int level = 7;
@@ -101,11 +105,11 @@ void heroChoice() {
 			Warrior warrior;
 
 			std::cout << warrior << std::endl;
-		*/
+		
 		
 		break;
 		}
-			
+			*/
 	
 }
 
