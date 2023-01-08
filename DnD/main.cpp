@@ -16,37 +16,17 @@ int main() {
 	menu();
 }
 
-int GetIntInRange(int optionsNumber) {
-	// Функция провверка на коректность ввода выбора действия
-	// ЕЩЕ НЕ ДОДЕЛАНА
+int GetIntInRange() {
 
-	int input;
-	std::cin >> input;
-	int number = -1;
-	//bool isConverted = static_cast<bool>(input, number); // непонятно с оут
-	bool isConverted = static_cast<bool>(input, number);
-	bool isInRange = number >= 1 && number <= optionsNumber;
-
-	while (!isConverted || !isInRange) {
-
-		std::cin.clear();
-		std::cin.ignore(32767, '\n');
-
-		std::cin >> input;
-		isConverted = static_cast<bool>(input, number);
-		isInRange = number >= 1 && number <= optionsNumber;
-	}
-
-	return number;
-	/*
 	while (true) {
 
 		std::cout << "Выберите действие: ";
 		int input;
 		std::cin >> input;
+
 		//Проверка на извлечение
-		if (std::cin.fail()) {
-			
+		if (std::cin.fail() || input < 0 || input > 9) {
+
 			std::cin.clear();
 			std::cin.ignore(32767, '\n');
 		}
@@ -55,9 +35,6 @@ int GetIntInRange(int optionsNumber) {
 			return input;
 		}
 	}
-	*/
-
-
 }
 
 //Главное меню(Новая игра, продолжить, выход)
@@ -84,7 +61,7 @@ void menu() {
 
 int levelOne() {
 
-	int optionsRoom1 = GetIntInRange(4);
+	int optionsRoom1 = GetIntInRange();
 
 	return 0;
 }
