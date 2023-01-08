@@ -18,6 +18,7 @@ int main() {
 
 int GetIntInRange(int optionsNumber) {
 	// Ôóíêöèÿ ïğîââåğêà íà êîğåêòíîñòü ââîäà âûáîğà äåéñòâèÿ
+	// ÅÙÅ ÍÅ ÄÎÄÅËÀÍÀ
 
 	int input;
 	std::cin >> input;
