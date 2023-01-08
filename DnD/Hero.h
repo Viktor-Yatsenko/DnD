@@ -1,5 +1,7 @@
 #pragma once
 #include<iostream>
+using std::cout;
+using std::endl;
 class Hero {
 private:
 	std::string Name;
@@ -20,6 +22,12 @@ public:
 		:Name(name), Health(value1),dexterity(value2),
 		Intelligence(value3),charisma(value4) {}
 	 
-
+	void print() {
+		cout << "Имя - " << Name << endl;
+		cout << "Жизни - " << Health << endl;
+		cout << "Ловкость - " << dexterity << endl;
+		cout << "Интеллект - " << Intelligence<< endl;
+		cout << "Харизма - " << charisma << endl;
+	}
 
 };
