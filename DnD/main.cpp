@@ -2,6 +2,8 @@
 #include <Windows.h>
 #include "MainMenu.h"
 #include "Hero.h"
+#include "RandNumber.h"
+
 
 
 int main()
@@ -10,6 +12,9 @@ int main()
 	SetConsoleOutputCP(1251);
 
 	SetConsoleTitle(L"DnD");
+	
+	
+	std::cout << getRandomNumberCube(1, 6);
 
 	menu();
 	
