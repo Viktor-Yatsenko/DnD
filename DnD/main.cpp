@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include "MainMenu.h"
 #include "Hero.h"
-#include "RandNumber.h"
+#include "Story.h"
 
 
 
@@ -13,12 +13,11 @@ int main()
 
 	SetConsoleTitle(L"DnD");
 	
-	
-	std::cout << getRandomNumberCube(1, 6);
+	Story s;
+
+	s.PrintMassage("Hello");
 
 	menu();
-	
-
 
 	return 0;
 }
