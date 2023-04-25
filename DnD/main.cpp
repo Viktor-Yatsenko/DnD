@@ -15,7 +15,8 @@ int main()
 	
 	Story s;
 
-	s.PrintMassage("Hello");
+	s.Text();
+
 
 	menu();
 

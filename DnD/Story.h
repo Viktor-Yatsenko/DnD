@@ -6,7 +6,6 @@
 class Story
 {
 public:
-	void PrintMassage(std::string massage);
-	int ArrayMassage(std::vector<int> arrayMassage);
-};
+	void Text();
 
+};
